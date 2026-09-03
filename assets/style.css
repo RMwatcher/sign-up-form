@@ -23,18 +23,31 @@
 body {
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 
 #container {
     display: flex;
 }
 
-h1 {
-    background-color: rgba(#000, #000, #000, 0.7);
-    color: white;
-    font-size: 2em;
+section {
+    background-color: #000;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
 }
 
+h1 {
+    display: flex;
+    font-size: 8em;
+    color: white;
+    align-items: center;
+}
+
+#logo {
+    margin: 0;
+}
+    
 #logo::before {
     content: url("/assets//images/odin-lined.png");
 }
