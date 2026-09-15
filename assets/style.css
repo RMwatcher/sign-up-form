@@ -71,3 +71,14 @@ h1 {
 #logo::before {
     content: url("/assets//images/odin-lined.png");
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 45px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
