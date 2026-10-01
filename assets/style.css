@@ -1,5 +1,6 @@
 :root {
     --text-color: #fff;
+    --button-color: #596d48;
 }
 
 * {
@@ -44,9 +45,8 @@ header {
     justify-content: space-between;
 }
 
-header > p, header > a {
-    display: flex;
-    justify-content: center;
+header > p, header a {
+    text-align: center;
     color: var(--text-color);
 }
 
@@ -83,6 +83,10 @@ main {
 
 main > h3, main > button, main > p {
     margin-left: 45px;
+}
+
+main a {
+    color: var(--button-color);
 }
 
 h3 {
@@ -123,17 +127,19 @@ input {
     border-radius: 5px;
 }
 
-input[type="password"]:user-invalid {
-    border: 1px solid red;
-}
-
 input:focus {
+    outline: none;
     border: 1px solid blue;
     box-shadow: 1px 1px 5px #383838;
 }
 
+input[type="password"]:user-invalid {
+    border: 1px solid red;
+}
+
+
 button {
-    background-color: #596d48;
+    background-color: var(--button-color);
     color: var(--text-color);
     height: 50px;
     width: 220px;
